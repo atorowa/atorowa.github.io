@@ -1,0 +1,327 @@
+.unplayable-page {
+	display: block !important;
+}
+
+.game-page {
+	display: none !important;
+}
+
+@media only screen and (max-width: 767px) {
+	.unplayable-page {
+		display: none !important;
+	}
+	.game-page {
+		display: block !important;
+	}
+}
+
+.title {
+	font-family: 'Montserrat', 'Roboto', 'Noto Sans JP', arial, sans-serif;
+	text-align: center;
+	font-size: 3em;
+	font-weight: 700;
+}
+
+
+.share-button-modal a {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	font-weight: 700;
+	color: #303030;
+	background-color: #fdf2c5;
+	border-radius: 0.5em;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.32);
+}
+
+.share-button-main a {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0.5em 1em;
+	font-size: 0.8em;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #1d9bf0;
+	border-radius: 0.5em;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.32);
+}
+
+.start-button a {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #e35b4f;
+	border-radius: 0.5em;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.32);
+}
+
+.modal-bg {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+
+.modal-window {
+	display: none;
+	margin: 0;
+	padding: 0;
+	color: #FDF2C5;
+	background-color: #e35b4f;
+	box-shadow: 0px 0px 0px 0.8em #e35b4f;
+	border: solid 2px #fdf2c5;
+	position: fixed;
+	z-index: 21;
+	flex-direction: column;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+}
+
+.clear-remain-num {
+	font-family: 'Montserrat', 'Roboto', 'Noto Sans JP', arial, sans-serif;
+	font-weight: 500;
+	transition: color 1s;
+}
+
+.highlight-remain {
+	color: #ff5555;
+	transition-duration: 0s;
+}
+
+.box {
+	background: rgb(250, 250, 250);
+	box-shadow: rgb(0 0 0 / 20%) 3px 2px 3px -1px;
+	width: fit-content;
+	height: fit-content;
+	max-width: fit-content;
+	max-height: fit-content;
+	padding: 0.5rem;
+}
+
+.cell {
+	width: 3rem;
+	height: 3rem;
+	max-width: 3rem;
+	max-height: 3rem;
+	font-weight: 500;
+	margin: 0.1rem;
+	font-size: 2rem;
+	text-align: center;
+	transition: background-color 1s;
+}
+
+.marked {
+	color: #ff5555;
+}
+
+.highlight-cell {
+	background-color: #ffaaaa;
+	transition-duration: 0s;
+}
+
+.input-group-normal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: inherit;
+	font-size: 2rem;
+	font-weight: 500;
+	background: rgb(250, 250, 250);
+	box-shadow: rgb(0 0 0 / 20%) 3px 2px 3px -1px;
+	padding: 0.5rem;
+}
+
+.input-normal {
+	font-family: inherit;
+	font-weight: inherit;
+	color: inherit;
+	font-size: inherit;
+	width: 1em;
+	max-width: 100%;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	max-width: 100%;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+}
+
+.input-normal-label {
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+.input-disabled {
+	background-color: #D0D0D0;
+}
+
+.brackets {
+	border: none;
+}
+
+.input-normal:focus {
+	outline: none;
+}
+
+.input-normal:disabled {
+	color: #303030;
+	-webkit-text-fill-color: #303030;
+	opacity: 1;
+}
+
+.input-group-clue {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.input-clue {
+	font-family: inherit;
+	color: #4896fa;
+	font-weight: 500;
+	font-size: 16px;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	padding-left: 0;
+	padding-right: 0;
+    margin-bottom: 5px;
+}
+
+.input-clue:focus {
+	outline: none;
+}
+
+.input-clue:disabled {
+	color: #4896fa;
+	-webkit-text-fill-color: #4896fa;
+	opacity: 1;
+}
+
+.brackets-clue {
+	height: 20px;
+	border: none;
+	z-index: -1;
+	padding: 0;
+}
+
+.separator {
+	background-color: #e9e9e9;
+	box-sizing: border-box;
+	height: 84px;
+	width: 1px;
+}
+
+.row-container {
+	box-sizing: border-box;
+	height: 100%;
+	align-items: center;
+	flex-direction: row;
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.clue-title {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: inherit;
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 400;
+	background-image: linear-gradient(0deg, #d2e3fc 50%, transparent 12%);
+	line-height: 1.3;
+}
+
+.clue-text {
+	color: #303030;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.clue-company {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: inherit;
+	font-family: inherit;
+	font-size: 10px;
+	font-weight: 300;
+}
+
+.open-button {
+	color: #ffffff;
+	background-color: #4896fa;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .25);
+	border-radius: 4px;
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 0 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+details {
+	font-weight: 400;
+	border: 1px solid #aaa;
+	padding: .5em .5em 0;
+	background-color: #ffffff;
+}
+
+summary {
+	font-weight: 700;
+	margin: -.5em -.5em 0;
+	padding: .5em;
+	background-color: #eeeeee;
+}
+
+details[open] {
+	padding: .5em;
+}
+
+.hint-content {
+	font-size: 0.8em;
+	padding: .5em 0 0 0;
+}
+
+.hint-detail {
+	padding: 0.5em 0 0 0;
+}
+
+.caution {
+	padding: 0.5em  20px  0.5em  0;
+	margin: 0.5em 1em;
+	border: 2px solid #303030;
+	border-radius: 1em;
+	font-size: 0.8em;
+}
+
+li {
+	padding: 0.2em 0;
+}
+
+body {
+	color: #303030;
+	background-color: #faebd7;
+	font-family: 'Roboto', 'Noto Sans JP', arial, sans-serif;
+}
